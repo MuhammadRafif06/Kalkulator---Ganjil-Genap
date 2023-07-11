@@ -5,6 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input[type="number"] {
+            padding: 7px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 8px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #demo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,14 +51,14 @@
     <p id="demo"></p>
 
     <script>
-         //Penghitungan dan Pengecekan Hasil Modulo
-         function cekGanjilGenap(){
-                var bilangan = document.getElementById("myNumber").value
-                if(bilangan % 2 == 0)
-                    document.getElementById("demo").innerText = "Bilangan Genap"
-                else
-                    document.getElementById("demo").innerText = "Bilangan Ganjil"
-            }
+        //Penghitungan dan Pengecekan Hasil Modulo
+        function cekGanjilGenap() {
+            var bilangan = document.getElementById("myNumber").value
+            if (bilangan % 2 == 0)
+                document.getElementById("demo").innerText = "Bilangan Genap"
+            else
+                document.getElementById("demo").innerText = "Bilangan Ganjil"
+        }
     </script>
 </body>
 
